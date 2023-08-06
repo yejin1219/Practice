@@ -17,6 +17,36 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>EntrancSservlet</servlet-name>
-    <url-pattern>/EntrancSservlet</url-pattern>
+    <url-pattern>/SignUp</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ViewMemberServlet</display-name>
+    <servlet-name>ViewMemberServlet</servlet-name>
+    <servlet-class>servlet.controller.ViewMemberServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ViewMemberServlet</servlet-name>
+    <url-pattern>/View</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>SearchMemberServlet</display-name>
+    <servlet-name>SearchMemberServlet</servlet-name>
+    <servlet-class>servlet.controller.SearchMemberServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SearchMemberServlet</servlet-name>
+    <url-pattern>/Search</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>EncodingFilter</display-name>
+    <servlet-name>EncodingFilter</servlet-name>
+    <servlet-class>servlet.filter.EncodingFilter</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EncodingFilter</servlet-name>
+    <url-pattern>/*</url-pattern>
   </servlet-mapping>
 </web-app>
